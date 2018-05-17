@@ -132,6 +132,10 @@ service squid stop > /dev/null 2> /dev/null
 service ssh restart > /dev/null 2> /dev/null
 service sshd restart > /dev/null 2> /dev/null
 
+if [[ "$port443" = 's' ]]; then
+chmod a+x proxy443.py && nohup python proxy443.py > proxy443.txt &
+fi
+
 if [[ "$port80" = 's' ]]; then
 chmod a+x proxy80.py && nohup python proxy80.py > proxy80.txt &
 fi
