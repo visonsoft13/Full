@@ -2,7 +2,7 @@
 
 clear
 
-echo -e "\033[4;36m © TwoVPS | 2018 All rights reserved \033[0m"
+echo -e "\033[4;36m © VisonSoft | 2018 All rights reserved \033[0m"
 
 echo ""
 
@@ -18,7 +18,7 @@ rosa=proxy8080.py
 preto=proxy8799.py
 azul=proxy3128.py
 
-sshd_config(){ echo "# © TwoVPS | 2018 All rights reserved
+sshd_config(){ echo "# © VisonSoft | 2018 All rights reserved
 #
 Port 22
 Port 144
@@ -54,7 +54,7 @@ echo -e "\033[1;32mPort 80 OK √ \033[0m"
 history -c
 else
 echo -e "\033[1;31mBaixando arquivos para porta 80...\033[0m"
-wget https://raw.githubusercontent.com/twossh/fullpython/master/proxy80.py > /dev/null 2> /dev/null
+wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy80.py > /dev/null 2> /dev/null
 history -c
 fi
 
@@ -63,7 +63,7 @@ echo -e "\033[1;32mPort 8080 OK √ \033[0m"
 history -c
 else
 echo -e "\033[1;31mBaixando arquivos para porta 8080...\033[0m"
-wget https://raw.githubusercontent.com/twossh/fullpython/master/proxy8080.py > /dev/null 2> /dev/null
+wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy8080.py > /dev/null 2> /dev/null
 history -c
 fi
 
@@ -72,7 +72,7 @@ echo -e "\033[1;32mPort 8799 OK √ \033[0m"
 history -c
 else
 echo -e "\033[1;31mBaixando arquivos para porta 8799...\033[0m"
-wget https://raw.githubusercontent.com/twossh/fullpython/master/proxy8799.py > /dev/null 2> /dev/null
+wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy8799.py > /dev/null 2> /dev/null
 history -c
 fi
 
@@ -84,7 +84,7 @@ echo -e "\033[1;32mPort 3128 OK √ \033[0m"
 history -c
 else
 echo -e "\033[1;31mBaixando arquivos para porta 3128...\033[0m"
-wget https://raw.githubusercontent.com/twossh/fullpython/master/proxy3128.py > /dev/null 2> /dev/null
+wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy3128.py > /dev/null 2> /dev/null
 history -c
 fi
 
