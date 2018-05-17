@@ -16,10 +16,10 @@ abobora=/root/
 verde=proxy443.py
 rosa=proxy80.py
 
-banner_config(){ echo "© TwoSSH | 2018 All rights reserved" > /etc/bannerssh
+banner_config(){ echo "© VisonSoft | 2018 All rights reserved" > /etc/bannerssh
 }
 banner_config
-wget -O /etc/ssh/sshd_config "https://raw.githubusercontent.com/visonsoft13/Socks/master/sshd_config"
+wget -O /etc/ssh/sshd_config "https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/sshd_config"
 service ssh restart
 
 if [ -e "$abobora$verde" ] ; then
@@ -27,7 +27,7 @@ echo -e "\033[1;32mPort 443 OK √ \033[0m"
 history -c
 else
 echo -e "\033[1;31mBaixando arquivos para porta 443...\033[0m"
-wget https://raw.githubusercontent.com/visonsoft13/Socks/master/proxy443.py > /dev/null 2> /dev/null
+wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy443.py > /dev/null 2> /dev/null
 history -c
 fi
 
@@ -37,7 +37,7 @@ echo -e "\033[1;32mPort 80 OK √ \033[0m"
 history -c
 else
 echo -e "\033[1;31mBaixando arquivos para porta 80...\033[0m"
-wget https://raw.githubusercontent.com/visonsoft13/Socks/master/proxy80.py > /dev/null 2> /dev/null
+wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy80.py > /dev/null 2> /dev/null
 history -c
 fi
 
