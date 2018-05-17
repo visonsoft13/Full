@@ -2,7 +2,7 @@
 
 clear
 
-echo -e "\033[4;36m © TwoVPS | 2018 All rights reserved \033[0m"
+echo -e "\033[4;36m © VisonSoft | 2018 All rights reserved \033[0m"
 
 echo ""
 
