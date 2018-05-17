@@ -2,7 +2,7 @@
 clear
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-20s\n' "VisonSoft Script - FULL" ; tput sgr0
 tput setaf 3 ; tput bold ; echo "" ; echo "Este script irá:" ; echo ""
-echo "● Instalar e configurar o proxy socks nas portas 80, 3128, 8080, 8799 e 443" ; echo "  para permitir conexões SSH para este servidor"
+echo "● Instalar e configurar o proxy socks nas portas 80 e 443" ; echo "  para permitir conexões SSH para este servidor"
 echo "● Configurar o OpenSSH para rodar nas portas 22 e 144"
 echo "● Instalar um conjunto de scripts com comandos do sistema para o gerenciamento de usuários" ; tput sgr0
 echo ""
