@@ -50,6 +50,15 @@ UsePAM yes" > /etc/ssh/sshd_config
 }
 
 if [ -e "$abobora$verde" ] ; then
+echo -e "\033[1;32mPort 443 OK √ \033[0m"
+history -c
+else
+echo -e "\033[1;31mBaixando arquivos para porta 443...\033[0m"
+wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy443.py > /dev/null 2> /dev/null
+history -c
+fi
+
+if [ -e "$abobora$verde" ] ; then
 echo -e "\033[1;32mPort 80 OK √ \033[0m"
 history -c
 else
