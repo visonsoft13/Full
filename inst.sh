@@ -58,7 +58,7 @@ banner_config
 	chmod +x /bin/alterarsenha
 	wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/criarusuario2.sh -O /bin/criarusuario
 	chmod +x /bin/criarusuario
-	wget https://raw.githubusercontent.com/visonsoft13/Socks/master/socks -O /bin/socks
+	wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/socks -O /bin/socks
 	chmod +x /bin/socks
 	wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/expcleaner2.sh -O /bin/expcleaner
 	chmod +x /bin/expcleaner
