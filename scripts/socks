@@ -112,6 +112,9 @@ echo ""
 echo -e "\033[1;31mRESPONDA ALGUMAS PERGUNTAS \033[0m"
 echo ""
 
+echo -e "\033[1;32mAbrir porta 443? \033[0m"
+read -p "[s/n]: " -e -i s port443
+
 echo -e "\033[1;32mAbrir porta 80? \033[0m"
 read -p "[s/n]: " -e -i s port80
 
