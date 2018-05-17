@@ -2,7 +2,7 @@
 clear
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-20s\n' "VisonSoft Script - FULL" ; tput sgr0
 tput setaf 3 ; tput bold ; echo "" ; echo "Este script irá:" ; echo ""
-echo "● Instalar e configurar o proxy socks nas portas 80, 3128, 8080 e 8799" ; echo "  para permitir conexões SSH para este servidor"
+echo "● Instalar e configurar o proxy socks nas portas 80, 3128, 8080, 8799 e 443" ; echo "  para permitir conexões SSH para este servidor"
 echo "● Configurar o OpenSSH para rodar nas portas 22, 144 e 443"
 echo "● Instalar um conjunto de scripts com comandos do sistema para o gerenciamento de usuários" ; tput sgr0
 echo ""
@@ -97,7 +97,7 @@ banner_config
 clear
 echo ""
 tput setaf 7 ; tput setab 4 ; tput bold ; echo -e "Proxy Socks Instalado! Para rodar digite \033[1;31msocks\033[0m" ; tput sgr0
-tput setaf 7 ; tput setab 4 ; tput bold ; echo "OpenSSH rodando nas portas 22, 144 e 443" ; tput sgr0
+tput setaf 7 ; tput setab 4 ; tput bold ; echo "OpenSSH rodando nas portas 22 e 144" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "Scripts para gerenciamento de usuário instalados" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo -e "Para ver os comandos disponíveis use o comando: \033[1;31majuda\033[0m" ; tput sgr0
 tput setaf 7 ; tput setab 4 ; tput bold ; echo "Mod by VisonSoft" ; tput sgr0
