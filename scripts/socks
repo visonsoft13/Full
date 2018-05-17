@@ -13,6 +13,7 @@ echo -e "\033[1;31mVerificando... \033[0m"
 sleep 2
 
 abobora=/root/
+amarelo=proxy443.py
 verde=proxy80.py
 rosa=proxy8080.py
 preto=proxy8799.py
