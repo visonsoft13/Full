@@ -32,7 +32,5 @@ tput setaf 2 ; tput bold ; printf '%s' "speedtest " ; tput setaf 7 ; printf '%s'
 tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "otimizar " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Atualizar pacotes, limpar memória RAM e cache" ; echo ""
 tput sgr0
-tput setaf 2 ; tput bold ; printf '%s' "firewall " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Ant Torrent e DDoS" ; echo ""
-tput sgr0
 tput setaf 2 ; tput bold ; printf '%s' "detalhes " ; tput setaf 7 ; printf '%s' "- " ; tput setaf 3 ; echo "Informações do servidor (Uptime, RAM etc)" ; echo ""
 tput sgr0
