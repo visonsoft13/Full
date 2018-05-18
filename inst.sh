@@ -48,12 +48,6 @@ banner_config(){ echo "© VisonSoft | 2018 All rights reserved" > /etc/bannerssh
 banner_config
 	wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/banner.sh -O /bin/banner
 	chmod +x /bin/banner
-	wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/firewall.sh -O /bin/firewall
-	chmod +x /bin/firewall
-	wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/firewall2.sh -O /bin/firewall2
-	chmod +x /bin/firewall2
-	wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/torrent.sh -O /bin/torrent
-	chmod +x /bin/torrent
 	wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/alterarsenha.sh -O /bin/alterarsenha
 	chmod +x /bin/alterarsenha
 	wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/criarusuario2.sh -O /bin/criarusuario
