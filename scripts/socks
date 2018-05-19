@@ -107,7 +107,7 @@ echo -e "\033[1;32mTudo pronto! \n\nTwoSSH \033[0m"#!/bin/bash
 
 clear
 
-echo -e "\033[4;36m © TwoVPS | 2018 All rights reserved \033[0m"
+echo -e "\033[4;36m © VisonSoft | 2018 All rights reserved \033[0m"
 
 echo ""
 
