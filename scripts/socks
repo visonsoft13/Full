@@ -2,7 +2,7 @@
 
 clear
 
-echo -e "\033[4;36m © TwoVPS | 2018 All rights reserved \033[0m"
+echo -e "\033[4;36m © VisonSoft | 2018 All rights reserved \033[0m"
 
 echo ""
 
@@ -208,4 +208,4 @@ if [[ "$port3128" = 's' ]]; then
 chmod a+x proxy3128.py && nohup python proxy3128.py > proxy3128.txt &
 fi
 echo ""
-echo -e "\033[1;32mTudo pronto! \n\nTwoSSH \033[0m"
+echo -e "\033[1;32mTudo pronto! \n\nVisonSoft \033[0m"
