@@ -59,7 +59,7 @@ if [ "$udpvar" = "" ]
 sleep 5s
 echo -e "\033[1;36mInstalando, aguarde....\033[0m"
 cd /root/
-wget https://www.dropbox.com/s/zur95ox2pkymbkj/badvpn-udpgw?dl=0 && mv /root/badvpn-udpgw /bin/badvpn-udpgw
+wget https://www.dropbox.com/s/bstybcvoav3crnh/badvpn-udpgw?dl=0 && mv /root/badvpn-udpgw /bin/badvpn-udpgw
 chmod 777 /bin/*
 echo "#!/bin/bash
 if [ "'$1'" == start ]
