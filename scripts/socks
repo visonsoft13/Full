@@ -2,7 +2,7 @@
 
 clear
 
-echo -e "\033[4;36m © VisonSoft | 2018 All rights reserved \033[0m"
+echo -e "\033[4;36m © TwoVPS | 2018 All rights reserved \033[0m"
 
 echo ""
 
@@ -13,31 +13,45 @@ echo -e "\033[1;31mVerificando... \033[0m"
 sleep 2
 
 abobora=/root/
-verde=proxy443.py
-rosa=proxy80.py
+verde=proxy80.py
+rosa=proxy8080.py
+preto=proxy8799.py
+azul=proxy3128.py
 
-banner_config(){ echo "© VisonSoft | 2018 All rights reserved" > /etc/bannerssh
-}
-banner_config
-wget -O /etc/ssh/sshd_config "https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/sshd_config"
-service ssh restart
 
 if [ -e "$abobora$verde" ] ; then
-echo -e "\033[1;32mPort 443 OK √ \033[0m"
-history -c
-else
-echo -e "\033[1;31mBaixando arquivos para porta 443...\033[0m"
-wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy443.py > /dev/null 2> /dev/null
-history -c
-fi
-
-
-if [ -e "$abobora$rosa" ] ; then
 echo -e "\033[1;32mPort 80 OK √ \033[0m"
 history -c
 else
 echo -e "\033[1;31mBaixando arquivos para porta 80...\033[0m"
-wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy80.py > /dev/null 2> /dev/null
+wget hhttps://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy80.py > /dev/null 2> /dev/null
+history -c
+fi
+
+if [ -e "$abobora$rosa" ] ; then
+echo -e "\033[1;32mPort 8080 OK √ \033[0m"
+history -c
+else
+echo -e "\033[1;31mBaixando arquivos para porta 8080...\033[0m"
+wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy8080.py > /dev/null 2> /dev/null
+history -c
+fi
+
+if [ -e "$abobora$preto" ] ; then
+echo -e "\033[1;32mPort 8799 OK √ \033[0m"
+history -c
+else
+echo -e "\033[1;31mBaixando arquivos para porta 8799...\033[0m"
+wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy8799.py > /dev/null 2> /dev/null
+history -c
+fi
+
+if [ -e "$abobora$azul" ] ; then
+echo -e "\033[1;32mPort 3128 OK √ \033[0m"
+history -c
+else
+echo -e "\033[1;31mBaixando arquivos para porta 3128...\033[0m"
+wget https://raw.githubusercontent.com/visonsoft13/Full/master/scripts/proxy3128.py > /dev/null 2> /dev/null
 history -c
 fi
 
@@ -56,24 +70,142 @@ echo ""
 echo -e "\033[1;31mRESPONDA ALGUMAS PERGUNTAS \033[0m"
 echo ""
 
-echo -e "\033[1;32mAbrir porta 443? \033[0m"
-read -p "[s/n]: " -e -i s port443
-
 echo -e "\033[1;32mAbrir porta 80? \033[0m"
 read -p "[s/n]: " -e -i s port80
 
+echo -e "\033[1;32mAbrir porta 8080? \033[0m"
+read -p "[s/n]: " -e -i s port8080
+
+echo -e "\033[1;32mAbrir porta 8799? \033[0m"
+read -p "[s/n]: " -e -i s port8799
+
+echo -e "\033[1;32mAbrir porta 3128? \033[0m"
+read -p "[s/n]: " -e -i s port3128
+
 service squid3 stop > /dev/null 2> /dev/null
 service squid stop > /dev/null 2> /dev/null
-service ssh restart > /dev/null 2> /dev/null
-service sshd restart > /dev/null 2> /dev/null
-
-if [[ "$port443" = 's' ]]; then
-chmod a+x proxy443.py && nohup python proxy443.py > proxy443.txt &
-fi
 
 if [[ "$port80" = 's' ]]; then
 chmod a+x proxy80.py && nohup python proxy80.py > proxy80.txt &
 fi
 
+if [[ "$port8080" = 's' ]]; then
+chmod a+x proxy8080.py && nohup python proxy8080.py > proxy8080.txt &
+fi
+
+
+if [[ "$port8799" = 's' ]]; then
+chmod a+x proxy8799.py && nohup python proxy8799.py > proxy8799.txt &
+fi
+
+
+if [[ "$port3128" = 's' ]]; then
+chmod a+x proxy3128.py && nohup python proxy3128.py > proxy3128.txt &
+fi
 echo ""
-echo -e "\033[1;32mTudo pronto! \n\nVisonSoft \033[0m"
+echo -e "\033[1;32mTudo pronto! \n\nTwoSSH \033[0m"#!/bin/bash
+
+clear
+
+echo -e "\033[4;36m © TwoVPS | 2018 All rights reserved \033[0m"
+
+echo ""
+
+echo -e "\033[1;36mStart PythonSocks\033[0m"
+echo ""
+echo -e "\033[1;31mVerificando... \033[0m"
+
+sleep 2
+
+abobora=/root/
+verde=proxy80.py
+rosa=proxy8080.py
+preto=proxy8799.py
+azul=proxy3128.py
+
+
+if [ -e "$abobora$verde" ] ; then
+echo -e "\033[1;32mPort 80 OK √ \033[0m"
+history -c
+else
+echo -e "\033[1;31mBaixando arquivos para porta 80...\033[0m"
+wget https://raw.githubusercontent.com/twossh/fullpython/master/proxy80.py > /dev/null 2> /dev/null
+history -c
+fi
+
+if [ -e "$abobora$rosa" ] ; then
+echo -e "\033[1;32mPort 8080 OK √ \033[0m"
+history -c
+else
+echo -e "\033[1;31mBaixando arquivos para porta 8080...\033[0m"
+wget https://raw.githubusercontent.com/twossh/fullpython/master/proxy8080.py > /dev/null 2> /dev/null
+history -c
+fi
+
+if [ -e "$abobora$preto" ] ; then
+echo -e "\033[1;32mPort 8799 OK √ \033[0m"
+history -c
+else
+echo -e "\033[1;31mBaixando arquivos para porta 8799...\033[0m"
+wget https://raw.githubusercontent.com/twossh/fullpython/master/proxy8799.py > /dev/null 2> /dev/null
+history -c
+fi
+
+if [ -e "$abobora$azul" ] ; then
+echo -e "\033[1;32mPort 3128 OK √ \033[0m"
+history -c
+else
+echo -e "\033[1;31mBaixando arquivos para porta 3128...\033[0m"
+wget https://raw.githubusercontent.com/twossh/fullpython/master/proxy3128.py > /dev/null 2> /dev/null
+history -c
+fi
+
+sleep 2
+
+echo ""
+
+echo -e "\033[1;31mATENÇÃO! \033[0m"
+echo ""
+echo -e "\033[1;36mAo continuar, você aceita que: \n\nEstará ciente que o SQUID Proxy será desativado. \033[0m"
+
+sleep 2
+
+echo ""
+
+echo -e "\033[1;31mRESPONDA ALGUMAS PERGUNTAS \033[0m"
+echo ""
+
+echo -e "\033[1;32mAbrir porta 80? \033[0m"
+read -p "[s/n]: " -e -i s port80
+
+echo -e "\033[1;32mAbrir porta 8080? \033[0m"
+read -p "[s/n]: " -e -i s port8080
+
+echo -e "\033[1;32mAbrir porta 8799? \033[0m"
+read -p "[s/n]: " -e -i s port8799
+
+echo -e "\033[1;32mAbrir porta 3128? \033[0m"
+read -p "[s/n]: " -e -i s port3128
+
+service squid3 stop > /dev/null 2> /dev/null
+service squid stop > /dev/null 2> /dev/null
+
+if [[ "$port80" = 's' ]]; then
+chmod a+x proxy80.py && nohup python proxy80.py > proxy80.txt &
+fi
+
+if [[ "$port8080" = 's' ]]; then
+chmod a+x proxy8080.py && nohup python proxy8080.py > proxy8080.txt &
+fi
+
+
+if [[ "$port8799" = 's' ]]; then
+chmod a+x proxy8799.py && nohup python proxy8799.py > proxy8799.txt &
+fi
+
+
+if [[ "$port3128" = 's' ]]; then
+chmod a+x proxy3128.py && nohup python proxy3128.py > proxy3128.txt &
+fi
+echo ""
+echo -e "\033[1;32mTudo pronto! \n\nTwoSSH \033[0m"
